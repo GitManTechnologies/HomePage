@@ -1,3 +1,27 @@
 body {
   background-color: #224;
 }
+
+header {
+  width:100%;
+  padding: 30px 4% 10px;
+  background-color: #335;
+  margin: 0;
+  display: flex;
+}
+
+#headNav ul{
+  display: flex;
+  font-size: 1.25rem;
+  list-style: none;
+}
+
+#headNav ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+#headNav a {
+  color: gray;
+}
+
