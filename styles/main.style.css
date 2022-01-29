@@ -1,7 +1,15 @@
-/*body {
-  background-color: #224;
+html {
+  scrollbar-width: 20px;
 }
-*/
+
+.content::-webkit-scrollbar-thumb {
+  background-color: liner-gradient(45deg, #aaf, #448);
+}
+
+body {
+  background-color: #050510;
+}
+
 .content {
   visibility: hidden;
   opacity: 0;
@@ -33,6 +41,53 @@ header {
 }
 
 #headNav a {
-  color: gray;
+  color: black;
+  display: block;
+  
 }
 
+#headNav .btn {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #555;
+  padding: 0 10px 0;
+  text-align: center;
+  outline: none;
+  transition: ease .2s;
+}
+
+#headNav span {
+  position: relative;
+  z-index: 3;
+  color: black;
+}
+
+#headNav .btn:hover span {
+  color: #fff;
+}
+
+#headNav .btn::before {
+  background: #fff;
+  z-index: 2;
+}
+
+#headNav .bganime:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #333;
+  width: 100%;
+  height: 100%;
+  transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: scaleX(0);
+  transform-origin: right top;
+}
+
+#headNav .bganime:hover::before{
+  transform-origin: left top;
+  transform: scaleX(1)
+}
