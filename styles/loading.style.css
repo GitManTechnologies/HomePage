@@ -1,11 +1,15 @@
 #loading {
-    background-color: black;
-    color: white;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
+  background-color: black;
+  color: white;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 21474836;
 }
 
 #loadingText {
@@ -104,10 +108,10 @@
     transform-origin: left;
     transform: rotate(-28deg);
     background-color: white;
-    -moz-animation: coord1 1s linear 0s normal forwards;
-    -webkit-animation: coord1 1s linear 0s normal forwards;
-    -ms-animation: coord1 1s linear 0s normal forwards;
-    animation: coord1 1s linear 0s normal forwards;
+    -moz-animation: coord1 0.7s linear 0s normal forwards;
+    -webkit-animation: coord1 0.7s linear 0s normal forwards;
+    -ms-animation: coord1 0.7s linear 0s normal forwards;
+    animation: coord1 0.7s linear 0s normal forwards;
 }
 
 #loading_rocket :nth-child(2) {
@@ -121,10 +125,10 @@
     transform: rotate(0deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord2 0.5s linear 1s normal forwards;
-    -webkit-animation: coord2 0.5s linear 1s normal forwards;
-    -ms-animation: coord2 0.5s linear 1s normal forwards;
-    animation: coord2 0.5s linear 1s normal forwards;
+    -moz-animation: coord2 0.3s linear 0.7s normal forwards;
+    -webkit-animation: coord2 0.3s linear 0.7s normal forwards;
+    -ms-animation: coord2 0.3s linear 0.7s normal forwards;
+    animation: coord2 0.3s linear 0.7s normal forwards;
 }
 
 #loading_rocket :nth-child(3) {
@@ -138,10 +142,10 @@
     transform: rotate(90deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord3 1s linear 1.5s normal forwards;
-    -webkit-animation: coord3 1s linear 1.5s normal forwards;
-    -ms-animation: coord3 1s linear 1.5s normal forwards;
-    animation: coord3 1s linear 1.5s normal forwards;
+    -moz-animation: coord3 0.5s linear 1s normal forwards;
+    -webkit-animation: coord3 0.5s linear 1s normal forwards;
+    -ms-animation: coord3 0.5s linear 1s normal forwards;
+    animation: coord3 0.5s linear 1s normal forwards;
 }
 
 #loading_rocket :nth-child(4) {
@@ -155,10 +159,10 @@
     transform: rotate(0deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord4 2s linear 2.5s normal forwards;
-    -webkit-animation: coord4 2s linear 2.5s normal forwards;
-    -ms-animation: coord4 2s linear 2.5s normal forwards;
-    animation: coord4 2s linear 2.5s normal forwards;
+    -moz-animation: coord4 2s linear 1.5s normal forwards;
+    -webkit-animation: coord4 2s linear 1.5s normal forwards;
+    -ms-animation: coord4 2s linear 1.5s normal forwards;
+    animation: coord4 2s linear 1.5s normal forwards;
 }
 
 #loading_rocket :nth-child(5) {
@@ -172,10 +176,10 @@
     transform: rotate(-34deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord5 1.5s linear 4.5s normal forwards;
-    -webkit-animation: coord5 1.5s linear 4.5s normal forwards;
-    -ms-animation: coord5 1.5s linear 4.5s normal forwards;
-    animation: coord5 1.5s linear 4.5s normal forwards;
+    -moz-animation: coord5 1s linear 3.5s normal forwards;
+    -webkit-animation: coord5 1s linear 3.5s normal forwards;
+    -ms-animation: coord5 1s linear 3.5s normal forwards;
+    animation: coord5 1s linear 3.5s normal forwards;
 }
 
 #loading_rocket :nth-child(6) {
@@ -189,10 +193,10 @@
     transform: rotate(-146deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord6 1.5s linear 6s normal forwards;
-    -webkit-animation: coord6 1.5s linear 6s normal forwards;
-    -ms-animation: coord6 1.5s linear 6s normal forwards;
-    animation: coord6 1.5s linear 6s normal forwards;
+    -moz-animation: coord6 1s linear 4.5s normal forwards;
+    -webkit-animation: coord6 1s linear 4.5s normal forwards;
+    -ms-animation: coord6 1s linear 4.5s normal forwards;
+    animation: coord6 1s linear 4.5s normal forwards;
 }
 
 #loading_rocket :nth-child(7) {
@@ -206,10 +210,10 @@
     transform: rotate(-180deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord7 2s linear 7.5s normal forwards;
-    -webkit-animation: coord7 2s linear 7.5s normal forwards;
-    -ms-animation: coord7 2s linear 7.5s normal forwards;
-    animation: coord7 2s linear 7.5s normal forwards;
+    -moz-animation: coord7 2s linear 5.5s normal forwards;
+    -webkit-animation: coord7 2s linear 5.5s normal forwards;
+    -ms-animation: coord7 2s linear 5.5s normal forwards;
+    animation: coord7 2s linear 5.5s normal forwards;
 }
 
 #loading_rocket :nth-child(8) {
@@ -223,10 +227,10 @@
     transform: rotate(90deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord8 1s linear 9.5s normal forwards;
-    -webkit-animation: coord8 1s linear 9.5s normal forwards;
-    -ms-animation: coord8 1s linear 9.5s normal forwards;
-    animation: coord8 1s linear 9.5s normal forwards;
+    -moz-animation: coord8 0.5s linear 7.5s normal forwards;
+    -webkit-animation: coord8 0.5s linear 7.5s normal forwards;
+    -ms-animation: coord8 0.5s linear 7.5s normal forwards;
+    animation: coord8 0.5s linear 7.5s normal forwards;
 }
 
 #loading_rocket :nth-child(9) {
@@ -240,10 +244,10 @@
     transform: rotate(-180deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord9 0.5s linear 10.5s normal forwards;
-    -webkit-animation: coord9 0.5s linear 10.5s normal forwards;
-    -ms-animation: coord9 0.5s linear 10.5s normal forwards;
-    animation: coord9 0.5s linear 10.5s normal forwards;
+    -moz-animation: coord9 0.3s linear 8s normal forwards;
+    -webkit-animation: coord9 0.3s linear 8s normal forwards;
+    -ms-animation: coord9 0.3s linear 8s normal forwards;
+    animation: coord9 0.3s linear 8s normal forwards;
 }
 
 #loading_rocket :nth-child(10) {
@@ -257,10 +261,10 @@
     transform: rotate(-152deg);
     background-color: white;
     animation-delay: 1s;
-    -moz-animation: coord10 1s linear 11s normal forwards;
-    -webkit-animation: coord10 1s linear 11s normal forwards;
-    -ms-animation: coord10 1s linear 11s normal forwards;
-    animation: coord10 1s linear 11s normal forwards;
+    -moz-animation: coord10 0.7s linear 8.3s normal forwards;
+    -webkit-animation: coord10 0.7s linear 8.3s normal forwards;
+    -ms-animation: coord10 0.7s linear 8.3s normal forwards;
+    animation: coord10 0.7s linear 8.3s normal forwards;
 }
 
 .loaded {

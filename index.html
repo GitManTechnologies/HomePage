@@ -5,14 +5,16 @@
     <meta name="auther" content="GItMan">
     <title>GitManTechnologies</title>
     <!--icons-->
-    <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" href="resource/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="resource/icon/apple-touch-icon-180x180.png">
     <!--css-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="styles/loading.style.css">
     <link rel="stylesheet" href="styles/main.style.css">
     <!--jacascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/jquery-inertiaScroll.js"></script>
     <script src="scripts/main.js"></script>
   </head>
   <body>
@@ -44,78 +46,81 @@
       <script>
         setTimeout(function() {
           document.getElementById("loading").classList.add("loaded");
-        }, 14000);
+          document.getElementById("contents").classList.add("visible");
+        }, 12000);
       </script>
     </div>
     <!--header-->
-    <header>
-      <h1>
-        <a href="/">GitManTechnologies</a>
-      </h1>
-      <nav id="headNav">
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="pages/testpage.html">Prodacts</a>
-            <ul>
-              <li>
-                <a>Rockets</a>
-                <ul>
-                  <li><a>Kawaii</a></li>
-                  <li><a>Mottainai</a></li>
-                  <li><a>Sukoshi</a></li>
-                  <li><a>Ninja</a></li>
-                  <li><a>Origami</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="pages/testpage.html">Satelites</a>
-                <ul>
-                  <li><a>Koshihikari</a></li>
-                  <li><a>Akitakomachi</a></li>
-                  <li><a>Hitomebore</a></li>
-                  <li><a>Hinohikari</a></li>
-                  <li><a>Masshigura</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="pages/testpage.html">Software</a>
-                <ul></ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="pages/testpage.html">News</a>
-            <ul>
-              <li><a>Our News</a></li>
-              <li><a>Launched Satellites</a></li>
-              <li><a>Gallary</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="pages/testpage.html">Recruit</a>
-          </li>
-          <li>
-            <a href="pages/testpage.html">About</a>
-            <ul>
-              <li><a>What We Do</a></li>
-              <li><a>Contact</a></li>
-            </ul>
-          </li>
-          <li>
-            <a>Shop</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!--main contents-->
-    <main>
-    </main>
-    <!--footer-->
-    <footer>
+    <div id="contents">
+      <header>
+        <h1>
+          <a href="/">GitManTechnologies</a>
+        </h1>
+        <nav id="headNav">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="pages/testpage.html">Prodacts</a>
+              <ul>
+                <li>
+                  <a>Rockets</a>
+                  <ul>
+                    <li><a>Kawaii</a></li>
+                    <li><a>Mottainai</a></li>
+                    <li><a>Sukoshi</a></li>
+                    <li><a>Ninja</a></li>
+                    <li><a>Origami</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="pages/testpage.html">Satelites</a>
+                  <ul>
+                    <li><a>Koshihikari</a></li>
+                    <li><a>Akitakomachi</a></li>
+                    <li><a>Hitomebore</a></li>
+                    <li><a>Hinohikari</a></li>
+                    <li><a>Masshigura</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="pages/testpage.html">Software</a>
+                  <ul></ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="pages/testpage.html">News</a>
+              <ul>
+                <li><a>Our News</a></li>
+                <li><a>Launched Satellites</a></li>
+                <li><a>Gallary</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="pages/testpage.html">Recruit</a>
+            </li>
+            <li>
+              <a href="pages/testpage.html">About</a>
+              <ul>
+                <li><a>What We Do</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>Shop</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--main contents-->
+      <main id="main-content">
+      </main>
+      <!--footer-->
+      <footer>
 
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
