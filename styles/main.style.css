@@ -27,6 +27,12 @@ header {
   background-color: #335;
   margin: 0;
   display: flex;
+  
+}
+
+#headNav {
+  width: 75%;
+  left: 25%;
 }
 
 #headNav ul{
@@ -35,16 +41,33 @@ header {
   list-style: none;
 }
 
-#headNav ul li {
+#headNav > li {
+  width: 100px;
+}
+
+#headNav li {
   list-style: none;
   margin-left: 40px;
+  float: left;
+  position: relative;
+}
+
+#headNav li li {
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease;
+}
+
+#headNav li:hover > ul > li {
+  overflow: visible;
 }
 
 #headNav a {
-  color: black;
+  color: #ddd;
   display: block;
-  
+  background: #0f0f0f
 }
+
 
 #headNav .btn {
   position: relative;
@@ -56,12 +79,13 @@ header {
   text-align: center;
   outline: none;
   transition: ease .2s;
+  background: #0f0f0f;
 }
 
 #headNav span {
   position: relative;
   z-index: 3;
-  color: black;
+  color: #ddd;
 }
 
 #headNav .btn:hover span {

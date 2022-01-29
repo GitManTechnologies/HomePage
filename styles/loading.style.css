@@ -105,6 +105,7 @@
     left: 91px;
     top: 163px;
     width: 1px;
+    height: 3px;
     transform-origin: left;
     transform: rotate(-28deg);
     background-color: white;
@@ -120,6 +121,7 @@
     left: 140px;
     top: 137px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(0deg);
@@ -137,6 +139,7 @@
     left: 161px;
     top: 137px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(90deg);
@@ -154,6 +157,7 @@
     left: 161px;
     top: 187px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(0deg);
@@ -171,6 +175,7 @@
     left: 469px;
     top: 187px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(-34deg);
@@ -188,6 +193,7 @@
     left: 560px;
     top: 125px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(-146deg);
@@ -205,6 +211,7 @@
     left: 469px;
     top: 63px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(-180deg);
@@ -222,6 +229,7 @@
     left: 161px;
     top: 63px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(90deg);
@@ -239,6 +247,7 @@
     left: 161px;
     top: 113px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(-180deg);
@@ -256,6 +265,7 @@
     left: 140px;
     top: 113px;
     width: 1px;
+    height: 3px;
     opacity: 0;
     transform-origin: left;
     transform: rotate(-152deg);
