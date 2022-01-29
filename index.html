@@ -16,7 +16,38 @@
     <script src="scripts/main.js"></script>
   </head>
   <body>
-    
+    <!--loading animation-->
+    <div id="loading" class="wrapper">
+      <div id="loadingShape">
+        <div id="loadingText">
+          <div>L</div>
+          <div>O</div>
+          <div>A</div>
+          <div>D</div>
+          <div>I</div>
+          <div>N</div>
+          <div>G</div>
+        </div>
+        <div id="loading_rocket">
+          <div id="loading_rocket_coord_1"></div>
+          <div id="loading_rocket_coord_2"></div>
+          <div id="loading_rocket_coord_3"></div>
+          <div id="loading_rocket_coord_4"></div>
+          <div id="loading_rocket_coord_5"></div>
+          <div id="loading_rocket_coord_6"></div>
+          <div id="loading_rocket_coord_7"></div>
+          <div id="loading_rocket_coord_8"></div>
+          <div id="loading_rocket_coord_9"></div>
+          <div id="loading_rocket_coord_10"></div>
+        </div>
+      </div>
+      <script>
+        setTimeout(function() {
+          document.getElementById("loading").classList.add("loaded");
+        }, 14000);
+      </script>
+    </div>
+    <!--header-->
     <header>
       <h1>
         <a href="/">GitManTechnologies</a>
@@ -79,9 +110,10 @@
         </ul>
       </nav>
     </header>
+    <!--main contents-->
     <main>
-      <div id="loadingAnimation"></div>
     </main>
+    <!--footer-->
     <footer>
 
     </footer>
