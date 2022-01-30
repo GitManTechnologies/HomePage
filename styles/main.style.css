@@ -8,6 +8,7 @@ html {
 
 body {
   background-color: #050510;
+  text-decoration: none;
 }
 
 .content {
@@ -23,49 +24,66 @@ body {
 
 header {
   width:100%;
-  padding: 30px 4% 10px;
   background-color: #335;
   margin: 0;
   display: flex;
-  
+}
+
+header div {
+  display: flex;
+  height: 80px;
+  color: black;
 }
 
 #headNav {
-  width: 75%;
-  left: 25%;
+  width: 70%;
+  margin: 0 auto;
+  height: 2rem;
+  display: flex;
 }
 
-#headNav ul{
-  display: flex;
+#headNav > ul{
   font-size: 1.25rem;
   list-style: none;
-}
-
-#headNav > li {
-  width: 100px;
+  float: left;
+  height: 2rem;
+  display:flex;
+  margin: 0 auto;
 }
 
 #headNav li {
   list-style: none;
-  margin-left: 40px;
-  float: left;
+  width: 150px;
   position: relative;
 }
 
 #headNav li li {
   height: 0;
   overflow: hidden;
-  transition: .5s ease;
+  transition: .5s;
 }
 
 #headNav li:hover > ul > li {
+  height: 2rem;
   overflow: visible;
 }
 
-#headNav a {
+#headNav li ul li ul {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#headNav li a {
   color: #ddd;
   display: block;
-  background: #0f0f0f
+  background: #0f0f0f;
+  text-decoration: none;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+
 }
 
 
@@ -75,7 +93,6 @@ header {
   text-decoration: none;
   display: inline-block;
   border: 1px solid #555;
-  padding: 0 10px 0;
   text-align: center;
   outline: none;
   transition: ease .2s;
@@ -114,4 +131,12 @@ header {
 #headNav .bganime:hover::before{
   transform-origin: left top;
   transform: scaleX(1)
+}
+
+#headNav ul:nth-last-child() {
+  right: 0;
+}
+
+#headNav li {
+  float: none;
 }
