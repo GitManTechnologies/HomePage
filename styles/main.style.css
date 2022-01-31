@@ -3,7 +3,7 @@ html {
 }
 
 .content::-webkit-scrollbar-thumb {
-  background-color: liner-gradient(45deg, #aaf, #448);
+  background-color: linear-gradient(45deg, #aaf, #448);
 }
 
 body {
@@ -36,10 +36,11 @@ header div {
 }
 
 #headNav {
-  width: 70%;
+  width: 750px;
   margin: 0 auto;
   height: 2rem;
   display: flex;
+  margin: auto;
 }
 
 #headNav > ul{
@@ -86,6 +87,9 @@ header div {
 
 }
 
+#headNav > li > ul:before {
+  
+}
 
 #headNav .btn {
   position: relative;
@@ -139,4 +143,79 @@ header div {
 
 #headNav li {
   float: none;
+}
+
+footer {
+  width:100%;
+  height: 120px;
+  background-color: #335;
+  margin: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#footNav {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+footer .left {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: flex-start;
+  width: 40%;
+  margin-left: 40px;
+}
+
+footer #footNav .left ul {
+  display: flex;
+}
+
+footer #footNav .left ul li {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer #footNav .right {
+  display: flex;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 40%
+}
+
+footer #footNav .right > ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer #footNav .right ul > li {
+  margin-left: 20px;
+}
+
+footer #footNav .right ul > li li {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer #footNav .right span {
+  background: #333;
+  font-size: 1.5rem;
+}
+
+footer  .copyright {
+  left: 80%;
+  margin-top: auto;
+  margin-bottom: 20px auto;
 }
