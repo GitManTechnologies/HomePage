@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  width:100%;
+  width: 100%;
   background-color: #335;
   margin: 0;
   display: flex;
@@ -43,12 +43,12 @@ header div {
   margin: auto;
 }
 
-#headNav > ul{
+#headNav > ul {
   font-size: 1.25rem;
   list-style: none;
   float: left;
   height: 2rem;
-  display:flex;
+  display: flex;
   margin: 0 auto;
 }
 
@@ -61,7 +61,7 @@ header div {
 #headNav li li {
   height: 0;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #headNav li:hover > ul > li {
@@ -84,11 +84,6 @@ header div {
   width: 100%;
   height: 2rem;
   line-height: 2rem;
-
-}
-
-#headNav > li > ul:before {
-  
 }
 
 #headNav .btn {
@@ -99,7 +94,7 @@ header div {
   border: 1px solid #555;
   text-align: center;
   outline: none;
-  transition: ease .2s;
+  transition: ease 0.2s;
   background: #0f0f0f;
 }
 
@@ -127,14 +122,14 @@ header div {
   background: #333;
   width: 100%;
   height: 100%;
-  transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
   transform: scaleX(0);
   transform-origin: right top;
 }
 
-#headNav .bganime:hover::before{
+#headNav .bganime:hover::before {
   transform-origin: left top;
-  transform: scaleX(1)
+  transform: scaleX(1);
 }
 
 #headNav ul:nth-last-child() {
@@ -146,8 +141,8 @@ header div {
 }
 
 footer {
-  width:100%;
-  height: 120px;
+  width: 100%;
+  height: 180px;
   background-color: #335;
   margin: 0;
 }
@@ -178,6 +173,8 @@ footer .left {
 
 footer #footNav .left ul {
   display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 footer #footNav .left ul li {
@@ -192,16 +189,20 @@ footer #footNav .right {
   width: 40%;
   margin-top: auto;
   margin-bottom: auto;
-  left: 40%
+  left: 40%;
 }
 
-footer #footNav .right > ul{
+footer #footNav .right > ul {
   display: flex;
   justify-content: flex-end;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 footer #footNav .right ul > li {
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 footer #footNav .right ul > li li {
@@ -209,13 +210,36 @@ footer #footNav .right ul > li li {
   margin-right: auto;
 }
 
-footer #footNav .right span {
-  background: #333;
-  font-size: 1.5rem;
+footer #footNav .right ul li {
+  text-align: center;
 }
 
-footer  .copyright {
+footer #footNav .right ul li ul li {
+  text-align: center;
+}
+
+footer #footNav .right span {
+  /*border: 1px solid gray;
+  background-color: rgba(20, 20, 20, 0.925);*/
+  font-size: 1.5rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+}
+
+footer #footNav .right a::before {
+  color: black;
+}
+
+footer #footNav .right a:hover {
+  color: #ddd;
+}
+
+footer .copyright {
+  position: absolute;
   left: 80%;
-  margin-top: auto;
-  margin-bottom: 20px auto;
+  bottom: 20px;
+  color: gray;
 }

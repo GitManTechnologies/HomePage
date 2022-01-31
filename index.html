@@ -1,191 +1,203 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="auther" content="GItMan">
-    <title>GitManTechnologies</title>
-    <!--icons-->
-    <link rel="icon" href="resource/icon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="resource/icon/apple-touch-icon-180x180.png">
-    <!--css-->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/v6.0/css/all">
-    <link rel="stylesheet" href="styles/loading.style.css">
-    <link rel="stylesheet" href="styles/main.style.css">
-    <!--jacascript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="scripts/jquery-inertiaScroll.js"></script>
-    <script src="https://kit.fontawesome.com/85cc705cb7.js" crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
-  </head>
-  <body>
-    <!--loading animation-->
-    <div id="loading" class="wrapper">
-      <div id="loadingShape">
-        <div id="loadingText">
-          <div>L</div>
-          <div>O</div>
-          <div>A</div>
-          <div>D</div>
-          <div>I</div>
-          <div>N</div>
-          <div>G</div>
-        </div>
-        <div id="loading_rocket">
-          <div id="loading_rocket_coord_1"></div>
-          <div id="loading_rocket_coord_2"></div>
-          <div id="loading_rocket_coord_3"></div>
-          <div id="loading_rocket_coord_4"></div>
-          <div id="loading_rocket_coord_5"></div>
-          <div id="loading_rocket_coord_6"></div>
-          <div id="loading_rocket_coord_7"></div>
-          <div id="loading_rocket_coord_8"></div>
-          <div id="loading_rocket_coord_9"></div>
-          <div id="loading_rocket_coord_10"></div>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="auther" content="GItMan">
+  <title>GitManTechnologies</title>
+  <!--icons-->
+  <link rel="icon" href="resource/icon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="resource/icon/apple-touch-icon-180x180.png">
+  <!--css-->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/v6.0/css/all">
+  <link rel="stylesheet" href="styles/loading.style.css">
+  <link rel="stylesheet" href="styles/main.style.css">
+  <!--jacascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="scripts/jquery-inertiaScroll.js"></script>
+  <script src="https://kit.fontawesome.com/85cc705cb7.js" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
+</head>
+
+<body>
+  <!--loading animation-->
+  <div id="loading" class="wrapper">
+    <div id="loadingShape">
+      <div id="loadingText">
+        <div>L</div>
+        <div>O</div>
+        <div>A</div>
+        <div>D</div>
+        <div>I</div>
+        <div>N</div>
+        <div>G</div>
       </div>
-      <script>
-        setTimeout(function() {
-          document.getElementById("loading").classList.add("loaded");
-          document.getElementById("contents").classList.add("visible");
-        }, 12000);
-      </script>
+      <div id="loading_rocket">
+        <div id="loading_rocket_coord_1"></div>
+        <div id="loading_rocket_coord_2"></div>
+        <div id="loading_rocket_coord_3"></div>
+        <div id="loading_rocket_coord_4"></div>
+        <div id="loading_rocket_coord_5"></div>
+        <div id="loading_rocket_coord_6"></div>
+        <div id="loading_rocket_coord_7"></div>
+        <div id="loading_rocket_coord_8"></div>
+        <div id="loading_rocket_coord_9"></div>
+        <div id="loading_rocket_coord_10"></div>
+      </div>
     </div>
-    <!--header-->
-    <div id="contents">
-      <header>
-        <!--<h1>
+    <script>
+      setTimeout(function () {
+        document.getElementById("loading").classList.add("loaded");
+        document.getElementById("contents").classList.add("visible");
+      }, 12000);
+    </script>
+  </div>
+  <!--header-->
+  <div id="contents">
+    <header>
+      <!--<h1>
           <a class="btn bganime" href="/">GitManTechnologies</a>
         </h1>-->
-        <div>
-          <a href="index.html">
-            <img src="resource/icon/logo.svg" alt="GitManTechnologies" height="80px">
-          </a>
-        </div>
-        <nav id="headNav">
-          <ul>
-            <li>
-              <a class="btn bganime" href="/" ><span>Home</span></a>
-            </li>
-            <li>
-              <a href="pages/testpage.html" class="btn bganime" id="test"><span>  Prodacts  </span></a>
-              <ul>
-                <li>
-                  <a class="btn bganime" href="pages/testpage.html"><span>Rockets</span></a>
-                  <ul>
-                    <li><a class="btn bganime"><span>Kawaii</span></a></li>
-                    <li><a class="btn bganime"><span>Mottainai</span></a></li>
-                    <li><a class="btn bganime"><span>Sukoshi</span></a></li>
-                    <li><a class="btn bganime"><span>Ninja</span></a></li>
-                    <li><a class="btn bganime"><span>Origami</span></a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="btn bganime" href="pages/testpage.html"><span>Satelites</span></a>
-                  <ul>
-                    <li><a class="btn bganime"><span>Koshihikari</span></a></li>
-                    <li><a class="btn bganime"><span>Akitakomachi</span></a></li>
-                    <li><a class="btn bganime"><span>Hitomebore</span></a></li>
-                    <li><a class="btn bganime"><span>Hinohikari</span></a></li>
-                    <li><a class="btn bganime"><span>Masshigura</span></a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="btn bganime" href="pages/testpage.html"><span>Software</span></a>
-                  <ul></ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="btn bganime" href="pages/testpage.html"><span>News</span></a>
-              <ul>
-                <li><a class="btn bganime"><span>Our News</span></a></li>
-                <li><a class="btn bganime"><span>Launched Satellites</span></a></li>
-                <li><a class="btn bganime"><span>Gallary</span></a></li>
-              </ul>
-            </li>
-            <!--<li>
+      <div>
+        <a href="index.html">
+          <img src="resource/icon/logo.svg" alt="GitManTechnologies" height="80px">
+        </a>
+      </div>
+      <nav id="headNav">
+        <ul>
+          <li>
+            <a class="btn bganime" href="/"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="pages/testpage.html" class="btn bganime" id="test"><span> Prodacts </span></a>
+            <ul>
+              <li>
+                <a class="btn bganime" href="pages/testpage.html"><span>Rockets</span></a>
+                <ul>
+                  <li><a class="btn bganime"><span>Kawaii</span></a></li>
+                  <li><a class="btn bganime"><span>Mottainai</span></a></li>
+                  <li><a class="btn bganime"><span>Sukoshi</span></a></li>
+                  <li><a class="btn bganime"><span>Ninja</span></a></li>
+                  <li><a class="btn bganime"><span>Origami</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="btn bganime" href="pages/testpage.html"><span>Satelites</span></a>
+                <ul>
+                  <li><a class="btn bganime"><span>Koshihikari</span></a></li>
+                  <li><a class="btn bganime"><span>Akitakomachi</span></a></li>
+                  <li><a class="btn bganime"><span>Hitomebore</span></a></li>
+                  <li><a class="btn bganime"><span>Hinohikari</span></a></li>
+                  <li><a class="btn bganime"><span>Masshigura</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="btn bganime" href="pages/testpage.html"><span>Software</span></a>
+                <ul></ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="btn bganime" href="pages/testpage.html"><span>News</span></a>
+            <ul>
+              <li><a class="btn bganime"><span>Our News</span></a></li>
+              <li><a class="btn bganime"><span>Launched Satellites</span></a></li>
+              <li><a class="btn bganime"><span>Gallary</span></a></li>
+            </ul>
+          </li>
+          <!--<li>
               <a class="btn bganime" href="pages/testpage.html"><span>Recruit</span></a>
             </li>-->
+          <li>
+            <a class="btn bganime" href="pages/testpage.html"><span>About</span></a>
+            <ul>
+              <li><a class="btn bganime"><span>What We Are</span></a></li>
+              <li><a class="btn bganime"><span>What We Do</span></a></li>
+              <li><a class="btn bganime"><span>Recruit</span></a></li>
+              <li><a class="btn bganime"><span>Contact</span></a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="btn bganime"><span>Shop</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--main contents-->
+    <main id="main-content">
+      <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
+      <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
+      <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
+      <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
+      <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
+      <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
+      <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
+      <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
+    </main>
+    <!--footer-->
+    <footer>
+      <div id="footNav">
+        <div class="left">
+          <p><a href="pages/testpage.html"><img src="resource/icon/logo.svg" height="80px"></a></p>
+          <ul>
             <li>
-              <a class="btn bganime" href="pages/testpage.html"><span>About</span></a>
+              <a href="https://www.youtube.com/channel/UC3uNGvURCrOedpiGdTARs5w">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/GitManTech">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.gg/tXg76XfV6B">
+                <i class="fa-brands fa-discord fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/GitManTechnologies">
+                <i class="fa-brands fa-github fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <span>Prodacts</span>
               <ul>
-                <li><a class="btn bganime"><span>What We Are</span></a></li>
-                <li><a class="btn bganime"><span>What We Do</span></a></li>
-                <li><a class="btn bganime"><span>Recruit</span></a></li>
-                <li><a class="btn bganime"><span>Contact</span></a></li>
+                <li><a href="pages/testpage.html">Rockets</a></li>
+                <li><a href="pages/testpage.html">Satelites</a></li>
+                <li><a href="pages/testpage.html">Softwares</a></li>
               </ul>
             </li>
             <li>
-              <a class="btn bganime"><span>Shop</span></a>
+              <span>News</span>
+              <ul>
+                <li><a href="pages/testpage.html">Our News</a></li>
+                <li><a href="pages/testpage.html">Launched Satelites</a></li>
+                <li><a href="pages/testpage.html">Gallary</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>About</span>
+              <ul>
+                <li><a href="pages/testpage.html">What We Are</a></li>
+                <li><a href="pages/testpage.html">What We Do</a></li>
+                <li><a href="pages/testpage.html">Recruit</a></li>
+                <li><a href="pages/testpage.html">Contact</a></li>
+              </ul>
             </li>
           </ul>
-        </nav>
-      </header>
-      <!--main contents-->
-      <main id="main-content">
-        <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
-        <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
-        <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
-        <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
-        <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
-        <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
-        <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
-        <img src="resource/images/Alpha-Launch-scaled.jpg" width="800px">
-      </main>
-      <!--footer-->
-      <footer>
-        <div id="footNav">
-          <div class="left">
-            <p><a><img src="resource/icon/logo.svg" height="80px"></a></p>
-            <ul>
-              <li>
-                <a href="https://www.youtube.com/channel/UC3uNGvURCrOedpiGdTARs5w">
-                  <i class="fa-brands fa-youtube fa-2x"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/GitManTech">
-                  <i class="fa-brands fa-twitter fa-2x"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://discord.gg/tXg76XfV6B">
-                  <i class="fa-brands fa-discord fa-2x"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/GitManTechnologies">
-                  <i class="fa-brands fa-github fa-2x"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="right">
-            <ul>
-              <li>
-                <span>Prodact</span>
-                <ul>
-                  <li><a>Rockets</a></li>
-                  <li><a>Satelites</a></li>
-                  <li><a>Softwares</a></li>
-                </ul>
-              </li>
-              <li>
-                <span>News</span>
-                <ul>
-                  <li><a>Our News</a></li>
-                  <li><a>Launched Satelites</a></li>
-                  <li><a>Gallary</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="copyright">&copy;GitManTechnologies 2022</div>
         </div>
-        
-      </footer>
-    </div>
-  </body>
+        <div class="copyright">&copy;GitManTechnologies 2022</div>
+      </div>
+
+    </footer>
+  </div>
+</body>
+
 </html>
