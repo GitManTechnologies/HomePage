@@ -428,7 +428,7 @@ body {
           perspective: 1500px;
   background: #000;
 }
-.demo-cont__credits {
+.demo-cont__click {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-y: auto;
@@ -451,7 +451,7 @@ body {
           transform: translate3d(100%, 0, 0) rotateY(-45deg);
   will-change: transform;
 }
-.credits-active .demo-cont__credits {
+.click-active .demo-cont__click {
   -webkit-transition: -webkit-transform 0.7s 0.2333333333s;
   transition: -webkit-transform 0.7s 0.2333333333s;
   transition: transform 0.7s 0.2333333333s;
@@ -459,11 +459,11 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-.demo-cont__credits *, .demo-cont__credits *:before, .demo-cont__credits *:after {
+.demo-cont__click *, .demo-cont__click *:before, .demo-cont__click *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.demo-cont__credits-close {
+.demo-cont__click-close {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -471,7 +471,7 @@ body {
   height: 28px;
   cursor: pointer;
 }
-.demo-cont__credits-close:before, .demo-cont__credits-close:after {
+.demo-cont__click-close:before, .demo-cont__click-close:after {
   content: "";
   position: absolute;
   left: 0;
@@ -481,36 +481,36 @@ body {
   margin-top: -1px;
   background: #fff;
 }
-.demo-cont__credits-close:before {
+.demo-cont__click-close:before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.demo-cont__credits-close:after {
+.demo-cont__click-close:after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.demo-cont__credits-heading {
+.demo-cont__click-heading {
   text-transform: uppercase;
   font-size: 40px;
   margin-bottom: 20px;
 }
-.demo-cont__credits-img {
+.demo-cont__click-img {
   display: block;
   width: 60%;
   margin: 0 auto 30px;
   border-radius: 10px;
 }
-.demo-cont__credits-name {
+.demo-cont__click-name {
   margin-bottom: 20px;
   font-size: 30px;
 }
-.demo-cont__credits-link {
+.demo-cont__click-link {
   display: block;
   margin-bottom: 10px;
   font-size: 24px;
   color: #fff;
 }
-.demo-cont__credits-blend {
+.demo-cont__click-blend {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -524,13 +524,13 @@ body {
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
 }
-.credits-active .example-slider {
+.click-active .example-slider {
   -webkit-transform: translate3d(-400px, 0, 0) rotateY(10deg) scale(0.9);
           transform: translate3d(-400px, 0, 0) rotateY(10deg) scale(0.9);
 }
 .example-slider .fnc-slide-1 .fnc-slide__inner,
 .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/blackwidow.jpg");
+  background-image: url("../resource/images/test.png");
 }
 .example-slider .fnc-slide-2 .fnc-slide__inner,
 .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
