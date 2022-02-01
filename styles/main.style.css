@@ -91,7 +91,8 @@ header div {
   overflow: hidden;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid #555;
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
   text-align: center;
   outline: none;
   transition: ease 0.2s;
@@ -167,7 +168,7 @@ footer .left {
   margin-top: auto;
   margin-bottom: auto;
   justify-content: flex-start;
-  width: 40%;
+  width: 30%;
   margin-left: 40px;
 }
 
@@ -189,7 +190,7 @@ footer #footNav .right {
   width: 40%;
   margin-top: auto;
   margin-bottom: auto;
-  left: 40%;
+  left: 30%;
 }
 
 footer #footNav .right > ul {
@@ -242,4 +243,8 @@ footer .copyright {
   left: 80%;
   bottom: 20px;
   color: gray;
+}
+
+#main-content div {
+  width: 800px;
 }

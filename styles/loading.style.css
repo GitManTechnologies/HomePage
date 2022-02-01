@@ -19,8 +19,8 @@
     align-items: center;
     width: 700px;
     height: 255px;
-    left: 30%;
-    top: 30%;
+    left: 50%;
+    top: 50%;
     margin-left: -100px;
     overflow: visible;
     -webkit-user-select: none;
@@ -28,6 +28,7 @@
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+    transform: translate(-50%, -50%);
 }
 
 #loadingText div {
@@ -92,11 +93,12 @@
 
 #loading_rocket {
     position: absolute;
-    width: 700px;
+    width: 600px;
     height: 250px;
     z-index: 10000;
-    left: 30%;
-    top: 30%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #loading_rocket #loading_rocket_coord_1 {
