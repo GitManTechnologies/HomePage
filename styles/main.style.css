@@ -1,3 +1,7 @@
+* {
+  cursor: none;
+}
+
 html {
   scrollbar-width: 20px;
 }
@@ -12,6 +16,40 @@ body {
   min-height: 100%;
 }
 
+#cursor div {
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2147483647;
+  pointer-events: none !important;
+}
+
+#cursor div#dot1 {
+  background: rgba(119, 174, 230, 0.8);
+  transition: width .2s, height .2s;
+}
+
+#cursor div#dot1.active {
+  height: 25px;
+  width: 25px;
+  background: rgba(119, 174, 230, 0.3);
+  mix-blend-mode: exclusion;
+}
+
+#cursor div#dot2 {
+  height: 30px;
+  width: 30px;
+  background: rgba(107, 125, 179, 0.2);
+  transition: width .4s, height .4s;
+  transition-timing-function: ease-out;
+}
+
+#cursor div#dot2.active {
+  height: 50px;
+  width: 50px;
+}
 
 .wapper {
   width: 100vw;
@@ -273,7 +311,7 @@ ul.card-stacks li.stack ul.cards-down li.card img {
   height: auto;
 }
 ul.card-stacks li.stack ul.cards-down li.card div.content {
-  padding: 5px 10px;
+  padding: 0 10px;
 }
 ul.card-stacks li.stack ul.cards-down li.card.card-1 {
   z-index: 10;
@@ -375,6 +413,16 @@ ul.cards-split.transition li.card.card-2 {
 }
 ul.cards-split.transition li.card.card-3 {
   left: 220px;
+}
+
+ul.card-stacks h1 {
+  font-size: 20px;
+  color: gray;
+}
+
+ul.card-stacks p {
+  font-size: 15px;
+  color: gray;
 }
 
 footer {
