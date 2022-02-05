@@ -265,8 +265,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+  
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.3s;
@@ -297,7 +296,8 @@
   width: 100%;
   height: 100%;
   line-height: 30px;
-  background: #1F2833;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
   opacity: 0;
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
@@ -367,7 +367,6 @@
   background: transparent;
   border: none;
   outline: none;
-  cursor: pointer;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }

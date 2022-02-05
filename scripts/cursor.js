@@ -25,3 +25,10 @@ $('.members').on('mouseenter', function () {
 $('.members').on('mouseleave', function () {
   $('#cursor div').removeClass();
 });
+$('.fnc-nav__control').on('mouseenter', function () {
+  $('#cursor div').removeClass('poionter');
+  $('#cursor div').addClass('active');
+});
+$('.fnc-nav__control').on('mouseleave', function () {
+  $('#cursor div').removeClass();
+});

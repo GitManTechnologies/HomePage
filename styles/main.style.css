@@ -1,5 +1,5 @@
 * {
-  cursor: none;
+  cursor: none !important;
 }
 
 html {
@@ -17,8 +17,8 @@ body {
 }
 
 #cursor div {
-  height: 0.6rem;
-  width: 0.6rem;
+  height: 10px;
+  width: 10px;
   border-radius: 100%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -30,7 +30,7 @@ body {
   background: rgba(119, 174, 230, 0.8);
   filter: drop-shadow(0 0 0.4rem rgb(114, 236, 206));
   mix-blend-mode: exclusion;
-  transition: width .2s, height .2s;
+  transition: width 0.2s, height 0.2s;
 }
 
 #cursor div#dot1.active {
@@ -44,7 +44,7 @@ body {
 #cursor div#dot1.pointer {
   height: 25px;
   width: 25px;
-  border-top: 5px solid #F0897F;
+  border-top: 5px solid #f0897f;
   border-right: 5px solid #f6da69;
   border-bottom: 5px solid #b2ce54;
   border-left: 5px solid #6aa7cd;
@@ -62,7 +62,7 @@ body {
 
 header {
   width: 100%;
-  background-color: #335;
+  background-color: rgb(28, 28, 54);
   margin: 0;
   display: flex;
   z-index: 10000 !important;
@@ -112,7 +112,6 @@ header div {
   position: absolute;
   top: 0;
   width: 100%;
-  
 }
 
 #headNav li a {
@@ -183,9 +182,8 @@ header div {
   float: none;
 }
 
-
-
-.news, .members {
+.news,
+.members {
   margin-top: 100px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -207,16 +205,18 @@ ul.cards {
   list-style-type: none;
   position: relative;
   padding: 20px 0;
-  
 }
+
 ul.cards li.title {
   margin: 0 0 20px;
 }
+
 ul.cards li.title h2 {
   font-weight: 700;
 }
+
 ul.cards li.card {
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
   height: 200px;
   width: 200px;
@@ -224,46 +224,55 @@ ul.cards li.card {
   position: absolute;
   left: 0px;
   -webkit-box-shadow: 1px 2px 2px 0 #aaa;
-          box-shadow: 1px 2px 2px 0 #aaa;
+  box-shadow: 1px 2px 2px 0 #aaa;
   -webkit-transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
   transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
 }
+
 ul.cards li.card img {
   max-width: 100%;
   height: auto;
 }
+
 ul.cards li.card div.content {
   padding: 5px 10px;
 }
+
 ul.cards li.card.card-1 {
   z-index: 10;
   -webkit-transform: rotateZ(-2deg);
-          transform: rotateZ(-2deg);
+  transform: rotateZ(-2deg);
 }
+
 ul.cards li.card.card-2 {
   z-index: 9;
   -webkit-transform: rotateZ(-7deg);
-          transform: rotateZ(-7deg);
+  transform: rotateZ(-7deg);
   -webkit-transition-delay: 0.05s;
-          transition-delay: 0.05s;
+  transition-delay: 0.05s;
 }
+
 ul.cards li.card.card-3 {
   z-index: 8;
   -webkit-transform: rotateZ(5deg);
-          transform: rotateZ(5deg);
+  transform: rotateZ(5deg);
   -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
+
 ul.cards.transition li.card {
   -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
 }
+
 ul.cards.transition li.card.card-1 {
   left: 440px;
 }
+
 ul.cards.transition li.card.card-2 {
   left: 220px;
 }
+
 ul.card-stacks {
   width: 660px;
   list-style-type: none;
@@ -273,18 +282,22 @@ ul.card-stacks {
   position: relative;
   height: 550px;
 }
+
 ul.card-stacks li.title {
   margin: 0 0 20px;
 }
+
 ul.card-stacks li.title h2 {
   font-weight: 700;
 }
+
 ul.card-stacks li.stack {
   position: absolute;
   left: 0px;
   -webkit-transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.02);
   transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.02);
 }
+
 ul.card-stacks li.stack ul.cards-down {
   position: relative;
   margin: 0 0 20px;
@@ -293,13 +306,14 @@ ul.card-stacks li.stack ul.cards-down {
   margin: 0;
   padding: 0;
 }
+
 ul.card-stacks li.stack ul.cards-down li.card {
   -webkit-transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.22);
   transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.22);
   left: 0px;
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-  background: #FFF;
+  transition-delay: 0.4s;
+  background: #fff;
   overflow: hidden;
   height: 200px;
   width: 200px;
@@ -307,47 +321,57 @@ ul.card-stacks li.stack ul.cards-down li.card {
   position: absolute;
   top: 0px;
   -webkit-box-shadow: 1px 2px 2px 0 #aaa;
-          box-shadow: 1px 2px 2px 0 #aaa;
+  box-shadow: 1px 2px 2px 0 #aaa;
 }
+
 ul.card-stacks li.stack ul.cards-down li.card img {
   max-width: 100%;
   height: auto;
 }
+
 ul.card-stacks li.stack ul.cards-down li.card div.content {
   padding: 0 10px;
 }
+
 ul.card-stacks li.stack ul.cards-down li.card.card-1 {
   z-index: 10;
   -webkit-transform: rotateZ(-2deg);
-          transform: rotateZ(-2deg);
+  transform: rotateZ(-2deg);
 }
+
 ul.card-stacks li.stack ul.cards-down li.card.card-2 {
   z-index: 9;
   -webkit-transform: rotateZ(-7deg);
-          transform: rotateZ(-7deg);
+  transform: rotateZ(-7deg);
 }
+
 ul.card-stacks li.stack ul.cards-down li.card.card-3 {
   z-index: 8;
   -webkit-transform: rotateZ(5deg);
-          transform: rotateZ(5deg);
+  transform: rotateZ(5deg);
 }
+
 ul.card-stacks.transition li.stack.stack-1 {
   left: 0px;
 }
+
 ul.card-stacks.transition li.stack.stack-2 {
   left: 230px;
 }
+
 ul.card-stacks.transition li.stack.stack-3 {
   left: 450px;
 }
+
 ul.card-stacks.transition li.stack ul.cards-down li.card {
   -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
 }
 
 ul.card-stacks.transition li.stack ul.cards-down li.card.card-2 {
   top: 220px;
 }
+
 ul.cards-split {
   width: 660px;
   height: 280px;
@@ -355,16 +379,18 @@ ul.cards-split {
   position: relative;
   margin: 0 auto 20px;
   padding: 20px;
-  
 }
+
 ul.cards-split li.title {
   margin: 0 0 20px;
 }
+
 ul.cards-split li.title h2 {
   font-weight: 700;
 }
+
 ul.cards-split li.card {
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
   height: 200px;
   width: 200px;
@@ -372,46 +398,55 @@ ul.cards-split li.card {
   position: absolute;
   left: 220px;
   -webkit-box-shadow: 1px 2px 2px 0 #aaa;
-          box-shadow: 1px 2px 2px 0 #aaa;
+  box-shadow: 1px 2px 2px 0 #aaa;
   -webkit-transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
   transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
 }
+
 ul.cards-split li.card img {
   max-width: 100%;
   height: auto;
 }
+
 ul.cards-split li.card div.content {
   padding: 5px 10px;
 }
+
 ul.cards-split li.card.card-1 {
   z-index: 10;
   -webkit-transform: rotateZ(-2deg);
-          transform: rotateZ(-2deg);
+  transform: rotateZ(-2deg);
 }
+
 ul.cards-split li.card.card-2 {
   z-index: 9;
   -webkit-transform: rotateZ(-7deg);
-          transform: rotateZ(-7deg);
+  transform: rotateZ(-7deg);
   -webkit-transition-delay: 0.05s;
-          transition-delay: 0.05s;
+  transition-delay: 0.05s;
 }
+
 ul.cards-split li.card.card-3 {
   z-index: 8;
   -webkit-transform: rotateZ(5deg);
-          transform: rotateZ(5deg);
+  transform: rotateZ(5deg);
   -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
+
 ul.cards-split.transition li.card {
   -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
 }
+
 ul.cards-split.transition li.card.card-1 {
   left: 0px;
 }
+
 ul.cards-split.transition li.card.card-2 {
   left: 440px;
 }
+
 ul.cards-split.transition li.card.card-3 {
   left: 220px;
 }
@@ -429,7 +464,7 @@ ul.card-stacks p {
 footer {
   width: 100%;
   height: 180px !important;
-  background-color: #335;
+  background-color: rgb(28, 28, 54);
   z-index: 100000;
   opacity: 1;
   visibility: visible;
@@ -505,7 +540,6 @@ footer #footNav .right ul li {
 
 footer #footNav .right ul li ul li {
   text-align: center;
-  
 }
 
 footer #footNav .right span {
