@@ -53,6 +53,12 @@ body {
   mix-blend-mode: exclusion;
 }
 
+#cursor div#dot1.text {
+  border-radius: 0;
+  height: 1.4em;
+  width: 4px;
+}
+
 .wapper {
   width: 100vw;
   height: 100vh;
