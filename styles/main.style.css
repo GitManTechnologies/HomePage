@@ -68,6 +68,7 @@ body {
 
 header {
   width: 100%;
+  height: 80px;
   background-color: rgb(28, 28, 54);
   margin: 0;
   display: flex;
@@ -186,6 +187,144 @@ header div {
 
 #headNav li {
   float: none;
+}
+
+.music-player > button{
+  width: 60px;
+  height: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 40px;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  background-image: linear-gradient(#fff,#fff),linear-gradient(135deg,#f6adcf 0,#ccd3f5 50%,#f6adcf 100%);
+  background-size: 200%;
+  background-origin: padding-box,border-box;
+  background-clip: padding-box,border-box;
+  box-shadow: 0 0.65104vw 1.30208vw rgb(150 21 88 / 10%);
+  display: flex;
+  flex-direction: column;
+}
+
+.music-player > button .equalizer {
+  width: 20px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.music-player .music-navigation .equalizer span {
+  display: block;
+  z-index: 2;
+  width: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: black;
+}
+
+.music-player > button > div.equalizer span:nth-child(1),
+.music-player > button > div.equalizer span:nth-child(5) {
+  width: 2px;
+  animation: equalizer 1s 0.6s infinite ease-in-out;
+}
+
+.music-player > button > div.equalizer span:nth-child(2),
+.music-player > button > div.equalizer span:nth-child(4) {
+  width: 2px;
+  animation: equalizer 1s 0.3s infinite ease-in-out;
+}
+
+.music-player > button > div.equalizer span:nth-child(3) {
+  width: 2px;
+  animation: equalizer 1s 0s infinite ease-in-out;
+}
+
+.music-player > button > span {
+  margin-bottom: auto;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+}
+
+.music-player .music-menu {
+  position: absolute;
+  right: -50vw;
+  top: 10px;
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  background: white;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.music-player .music-menu.show {
+  visibility: visible;
+  right: 120px;
+  border: linear-gradient(135deg,#f6adcf 0,#ccd3f5 50%,#f6adcf 100%) 2px transparent;
+}
+
+.music-player .music-menu .music-playlist,
+.music-player .music-menu .music-playlist img {
+  width: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.music-player .music-menu .music-controller {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-player .music-menu .music-controller img {
+  width: 30px;
+}
+
+.music-player .music-menu .music-controller .amplitude-play-pause {
+  width: 30px;
+  height: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.music-player .music-menu .music-controller .amplitude-play-pause img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.music-player .music-menu .music-controller .amplitude-next {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  background-image: url("../resource/icon/play-track-next.svg");
+}
+
+@keyframes equalizer {
+  0% {
+    height: 0;
+    width: 2px;
+  }
+  50% {
+    height: 10px;
+  }
+  100% {
+    height: 0;
+    width: 2px;
+  }
 }
 
 .news,
