@@ -1,414 +1,414 @@
 <!doctype html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="auther" content="GItMan">
+    <title>GitManTechnologies</title>
+    <!--icons-->
+    <link rel="icon" href="resource/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="resource/icon/apple-touch-icon-180x180.png">
+    <!--css-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="styles/loading.style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slideshow.style.css">
+    <link rel="stylesheet" href="styles/main.style.css">
+    <!--jacascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/jquery-inertiaScroll.js"></script>
+    <script src="https://kit.fontawesome.com/85cc705cb7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/slick.js"></script>
+    <script src="scripts/main.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="auther" content="GItMan">
-  <title>GitManTechnologies</title>
-  <!--icons-->
-  <link rel="icon" href="resource/icon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="resource/icon/apple-touch-icon-180x180.png">
-  <!--css-->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-  <link rel="stylesheet" href="styles/loading.style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles/main.style.css">
-  <link rel="stylesheet" href="styles/slick.css">
-  <link rel="stylesheet" href="styles/slideshow.style.css">
-  <!--jacascript-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="scripts/jquery-inertiaScroll.js"></script>
-  <script src="https://kit.fontawesome.com/85cc705cb7.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/slick.js"></script>
-</head>
-
-<body>
-  <!--cursor-->
-  <div id="cursor">
-    <div id="dot1"></div>
-  </div>
-  <!--loading animation-->
-  <div id="loading" class="wrapper">
-    <div id="loadingShape">
-      <div id="loadingText">
-        <div>L</div>
-        <div>O</div>
-        <div>A</div>
-        <div>D</div>
-        <div>I</div>
-        <div>N</div>
-        <div>G</div>
-      </div>
-      <div id="loading_rocket">
-        <div id="loading_rocket_coord_1"></div>
-        <div id="loading_rocket_coord_2"></div>
-        <div id="loading_rocket_coord_3"></div>
-        <div id="loading_rocket_coord_4"></div>
-        <div id="loading_rocket_coord_5"></div>
-        <div id="loading_rocket_coord_6"></div>
-        <div id="loading_rocket_coord_7"></div>
-        <div id="loading_rocket_coord_8"></div>
-        <div id="loading_rocket_coord_9"></div>
-        <div id="loading_rocket_coord_10"></div>
-      </div>
+  <body>
+    <!--cursor-->
+    <div id="cursor">
+      <div id="dot1"></div>
     </div>
-    <script>
-      setTimeout(function () {
-        document.getElementById("loading").classList.add("loaded");
-        document.getElementById("contents").classList.add("visible");
-      }, 12000);
-    </script>
-  </div>
-  <div id="contents">
-    <!--header-->
-    <header>
-      <div>
-        <a href="index.html">
-          <img src="resource/icon/logo.svg" alt="GitManTechnologies" height="80px">
-        </a>
-      </div>
-      <nav id="headNav">
-        <ul>
-          <li>
-            <a class="btn bganime" href="/"><span>Home</span></a>
-          </li>
-          <li>
-            <a href="pages/comingsoon.html" class="btn bganime" id="test"><span> Prodacts </span></a>
-            <ul>
-              <li>
-                <a class="btn bganime" href="pages/comingsoon.html"><span>Rockets</span></a>
-                <ul>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Kawaii</span></a></li>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Mottainai</span></a></li>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Sukoshi</span></a></li>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Ninja</span></a></li>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Origami</span></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="btn bganime" href="pages/comingsoon.html"><span>Satelites</span></a>
-                <ul>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Koshihikari</span></a></li>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Akitakomachi</span></a></li>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Hitomebore</span></a></li>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Hinohikari</span></a></li>
-                  <li><a class="btn bganime" href="pages/comingsoon.html"><span>Masshigura</span></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="btn bganime" href="pages/comingsoon.html"><span>Software</span></a>
-                <ul></ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="btn bganime" href="pages/comingsoon.html"><span>News</span></a>
-            <ul>
-              <li><a class="btn bganime" href="pages/comingsoon.html"><span>Our News</span></a></li>
-              <li><a class="btn bganime" href="pages/comingsoon.html"><span>Launched Satellites</span></a></li>
-              <li><a class="btn bganime" href="pages/comingsoon.html"><span>Gallary</span></a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="btn bganime" href="pages/comingsoon.html"><span>About</span></a>
-            <ul>
-              <li><a class="btn bganime" href="pages/comingsoon.html"><span>What We Are</span></a></li>
-              <li><a class="btn bganime" href="pages/comingsoon.html"><span>What We Do</span></a></li>
-              <li><a class="btn bganime" href="pages/comingsoon.html"><span>Recruit</span></a></li>
-              <li><a class="btn bganime" href="pages/comingsoon.html"><span>Contact</span></a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="btn bganime" href="pages/comingsoon.html"><span>Shop</span></a>
-            <ul>
-              <li><a class="btn bganime" href="https://camp-fire.jp/profile/GitManTechnologies/"><span>Donate</span></a></li>
-              <li><a class="btn bganime" href="pages/comingsoon.html"><span>Official Shop</span></a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!--main contents-->
-    <main id="main-content">
-      <div class="top-slide">
-        <div class="fnc-slider example-slider">
-          <div class="fnc-slider__slides">
-            <!-- slide start -->
-            <div class="fnc-slide m--blend-green m--active-slide">
-              <div class="fnc-slide__inner">
-                <div class="fnc-slide__mask">
-                  <div class="fnc-slide__mask-inner"></div>
-                </div>
-                <div class="fnc-slide__content">
-                  <h2 class="fnc-slide__heading">
-                    <div class="fnc-slide__heading-line">
-                      <span>Black</span>
-                    </div>
-                    <div class="fnc-slide__heading-line">
-                      <span>Widow</span>
-                    </div>
-                  </h2>
-                  <button type="button" class="fnc-slide__action-btn">
-                    View More
-                    <a href="pages/comingsoon.html"><span data-text="click">View More</span></a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- slide end -->
-            <!-- slide start -->
-            <div class="fnc-slide m--blend-dark">
-              <div class="fnc-slide__inner">
-                <div class="fnc-slide__mask">
-                  <div class="fnc-slide__mask-inner"></div>
-                </div>
-                <div class="fnc-slide__content">
-                  <h2 class="fnc-slide__heading">
-                    <div class="fnc-slide__heading-line">
-                      <span>Captain</span>
-                    </div>
-                    <div class="fnc-slide__heading-line">
-                      <span>America</span>
-                    </div>
-                  </h2>
-                  <button type="button" class="fnc-slide__action-btn">
-                    View More
-                    <span data-text="click">View More</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- slide end -->
-            <!-- slide start -->
-            <div class="fnc-slide m--blend-red">
-              <div class="fnc-slide__inner">
-                <div class="fnc-slide__mask">
-                  <div class="fnc-slide__mask-inner"></div>
-                </div>
-                <div class="fnc-slide__content">
-                  <h2 class="fnc-slide__heading">
-                    <div class="fnc-slide__heading-line">
-                      <span>Iron</span>
-                    </div>
-                    <div class="fnc-slide__heading-line">
-                      <span>Man</span>
-                    </div>
-                  </h2>
-                  <button type="button" class="fnc-slide__action-btn">
-                    View More
-                    <span data-text="click">View More</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- slide end -->
-            <!-- slide start -->
-            <div class="fnc-slide m--blend-blue">
-              <div class="fnc-slide__inner">
-                <div class="fnc-slide__mask">
-                  <div class="fnc-slide__mask-inner"></div>
-                </div>
-                <div class="fnc-slide__content">
-                  <h2 class="fnc-slide__heading">
-                    <div class="fnc-slide__heading-line">
-                      <span>Thor</span>
-                    </div>
-                    <div class="fnc-slide__heading-line">
-                      <span>Just Thor</span>
-                    </div>
-                  </h2>
-                  <button type="button" class="fnc-slide__action-btn">
-                    View More
-                    <span data-text="click">View More</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- slide end -->
-          </div>
-          <nav class="fnc-nav">
-            <div class="fnc-nav__bgs">
-              <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
-              <div class="fnc-nav__bg m--navbg-dark"></div>
-              <div class="fnc-nav__bg m--navbg-red"></div>
-              <div class="fnc-nav__bg m--navbg-blue"></div>
-            </div>
-            <div class="fnc-nav__controls">
-              <button class="fnc-nav__control">
-                Black Widow
-                <span class="fnc-nav__control-progress"></span>
-              </button>
-              <button class="fnc-nav__control">
-                Captain America
-                <span class="fnc-nav__control-progress"></span>
-              </button>
-              <button class="fnc-nav__control">
-                Iron Man
-                <span class="fnc-nav__control-progress"></span>
-              </button>
-              <button class="fnc-nav__control">
-                Thor
-                <span class="fnc-nav__control-progress"></span>
-              </button>
-            </div>
-          </nav>
+    <!--loading animation-->
+    <div id="loading" class="wrapper">
+      <div id="loadingShape">
+        <div id="loadingText">
+          <div>L</div>
+          <div>O</div>
+          <div>A</div>
+          <div>D</div>
+          <div>I</div>
+          <div>N</div>
+          <div>G</div>
         </div>
-        <!-- slider end -->
-        <div class="demo-cont__click">
-          <div class="demo-cont__click-close"></div>
-          <h2 class="demo-cont__click-heading">Made by</h2>
-          <img src="resource/images/coming-soon.png" alt="" class="demo-cont__click-img" />
-          <h3 class="demo-cont__click-name">Nikolay Talanov</h3>
-          <a href="https://codepen.io/suez/" target="_blank" class="demo-cont__click-link">My codepen</a>
-          <a href="https://twitter.com/NikolayTalanov" target="_blank" class="demo-cont__click-link">My twitter</a>
-          <h2 class="demo-cont__click-heading">Based on</h2>
-          <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="_blank"
-            class="demo-cont__click-link">
-            Concept by Kreativa Studio
+        <div id="loading_rocket">
+          <div id="loading_rocket_coord_1"></div>
+          <div id="loading_rocket_coord_2"></div>
+          <div id="loading_rocket_coord_3"></div>
+          <div id="loading_rocket_coord_4"></div>
+          <div id="loading_rocket_coord_5"></div>
+          <div id="loading_rocket_coord_6"></div>
+          <div id="loading_rocket_coord_7"></div>
+          <div id="loading_rocket_coord_8"></div>
+          <div id="loading_rocket_coord_9"></div>
+          <div id="loading_rocket_coord_10"></div>
+        </div>
+      </div>
+      <script>
+        setTimeout(function () {
+          document.getElementById("loading").classList.add("loaded");
+          document.getElementById("contents").classList.add("visible");
+        }, 12000);
+      </script>
+    </div>
+    <div id="contents">
+      <!--header-->
+      <header>
+        <div>
+          <a href="index.html">
+            <img src="resource/icon/logo.svg" alt="GitManTechnologies" height="80px">
           </a>
-          <h4 class="demo-cont__click-blend">Global Blend Mode</h4>
-          <div class="colorful-switch">
-            <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending"
-              id="colorful-switch-cb" />
-            <label class="colorful-switch__label" for="colorful-switch-cb">
-              <span class="colorful-switch__bg"></span>
-              <span class="colorful-switch__dot"></span>
-              <span class="colorful-switch__on">
-                <span class="colorful-switch__on__inner"></span>
-              </span>
-              <span class="colorful-switch__off"></span>
-            </label>
+        </div>
+        <nav id="headNav">
+          <ul>
+            <li>
+              <a class="btn bganime" href="/"><span>Home</span></a>
+            </li>
+            <li>
+              <a href="pages/comingsoon.html" class="btn bganime" id="test"><span> Prodacts </span></a>
+              <ul>
+                <li>
+                  <a class="btn bganime" href="pages/comingsoon.html"><span>Rockets</span></a>
+                  <ul>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Kawaii</span></a></li>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Mottainai</span></a></li>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Sukoshi</span></a></li>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Ninja</span></a></li>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Origami</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="btn bganime" href="pages/comingsoon.html"><span>Satelites</span></a>
+                  <ul>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Koshihikari</span></a></li>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Akitakomachi</span></a></li>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Hitomebore</span></a></li>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Hinohikari</span></a></li>
+                    <li><a class="btn bganime" href="pages/comingsoon.html"><span>Masshigura</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="btn bganime" href="pages/comingsoon.html"><span>Software</span></a>
+                  <ul></ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="btn bganime" href="pages/comingsoon.html"><span>News</span></a>
+              <ul>
+                <li><a class="btn bganime" href="pages/blogs/index.html"><span>Our News</span></a></li>
+                <li><a class="btn bganime" href="pages/comingsoon.html"><span>Launched Satellites</span></a></li>
+                <li><a class="btn bganime" href="pages/comingsoon.html"><span>Gallary</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="btn bganime" href="pages/comingsoon.html"><span>About</span></a>
+              <ul>
+                <li><a class="btn bganime" href="pages/comingsoon.html"><span>What We Are</span></a></li>
+                <li><a class="btn bganime" href="pages/comingsoon.html"><span>What We Do</span></a></li>
+                <li><a class="btn bganime" href="pages/comingsoon.html"><span>Recruit</span></a></li>
+                <li><a class="btn bganime" href="pages/comingsoon.html"><span>Contact</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="btn bganime" href="pages/comingsoon.html"><span>Shop</span></a>
+              <ul>
+                <li><a class="btn bganime" href="https://camp-fire.jp/profile/GitManTechnologies/"><span>Donate</span></a></li>
+                <li><a class="btn bganime" href="pages/comingsoon.html"><span>Official Shop</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--main contents-->
+      <main id="main-content">
+        <div class="top-slide">
+          <div class="fnc-slider example-slider">
+            <div class="fnc-slider__slides">
+              <!-- slide start -->
+              <div class="fnc-slide m--blend-green m--active-slide">
+                <div class="fnc-slide__inner">
+                  <div class="fnc-slide__mask">
+                    <div class="fnc-slide__mask-inner"></div>
+                  </div>
+                  <div class="fnc-slide__content">
+                    <h2 class="fnc-slide__heading">
+                      <div class="fnc-slide__heading-line">
+                        <span>Black</span>
+                      </div>
+                      <div class="fnc-slide__heading-line">
+                        <span>Widow</span>
+                      </div>
+                    </h2>
+                    <button type="button" class="fnc-slide__action-btn">
+                      View More
+                      <a href="pages/comingsoon.html"><span data-text="click">View More</span></a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- slide end -->
+              <!-- slide start -->
+              <div class="fnc-slide m--blend-dark">
+                <div class="fnc-slide__inner">
+                  <div class="fnc-slide__mask">
+                    <div class="fnc-slide__mask-inner"></div>
+                  </div>
+                  <div class="fnc-slide__content">
+                    <h2 class="fnc-slide__heading">
+                      <div class="fnc-slide__heading-line">
+                        <span>Captain</span>
+                      </div>
+                      <div class="fnc-slide__heading-line">
+                        <span>America</span>
+                      </div>
+                    </h2>
+                    <button type="button" class="fnc-slide__action-btn">
+                      View More
+                      <span data-text="click">View More</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- slide end -->
+              <!-- slide start -->
+              <div class="fnc-slide m--blend-red">
+                <div class="fnc-slide__inner">
+                  <div class="fnc-slide__mask">
+                    <div class="fnc-slide__mask-inner"></div>
+                  </div>
+                  <div class="fnc-slide__content">
+                    <h2 class="fnc-slide__heading">
+                      <div class="fnc-slide__heading-line">
+                        <span>Iron</span>
+                      </div>
+                      <div class="fnc-slide__heading-line">
+                        <span>Man</span>
+                      </div>
+                    </h2>
+                    <button type="button" class="fnc-slide__action-btn">
+                      View More
+                      <span data-text="click">View More</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- slide end -->
+              <!-- slide start -->
+              <div class="fnc-slide m--blend-blue">
+                <div class="fnc-slide__inner">
+                  <div class="fnc-slide__mask">
+                    <div class="fnc-slide__mask-inner"></div>
+                  </div>
+                  <div class="fnc-slide__content">
+                    <h2 class="fnc-slide__heading">
+                      <div class="fnc-slide__heading-line">
+                        <span>Thor</span>
+                      </div>
+                      <div class="fnc-slide__heading-line">
+                        <span>Just Thor</span>
+                      </div>
+                    </h2>
+                    <button type="button" class="fnc-slide__action-btn">
+                      View More
+                      <span data-text="click">View More</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- slide end -->
+            </div>
+            <nav class="fnc-nav">
+              <div class="fnc-nav__bgs">
+                <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+                <div class="fnc-nav__bg m--navbg-dark"></div>
+                <div class="fnc-nav__bg m--navbg-red"></div>
+                <div class="fnc-nav__bg m--navbg-blue"></div>
+              </div>
+              <div class="fnc-nav__controls">
+                <button class="fnc-nav__control">
+                  Black Widow
+                  <span class="fnc-nav__control-progress"></span>
+                </button>
+                <button class="fnc-nav__control">
+                  Captain America
+                  <span class="fnc-nav__control-progress"></span>
+                </button>
+                <button class="fnc-nav__control">
+                  Iron Man
+                  <span class="fnc-nav__control-progress"></span>
+                </button>
+                <button class="fnc-nav__control">
+                  Thor
+                  <span class="fnc-nav__control-progress"></span>
+                </button>
+              </div>
+            </nav>
+          </div>
+          <!-- slider end -->
+          <div class="demo-cont__click">
+            <div class="demo-cont__click-close"></div>
+            <h2 class="demo-cont__click-heading">Made by</h2>
+            <img src="resource/images/coming-soon.png" alt="" class="demo-cont__click-img" />
+            <h3 class="demo-cont__click-name">Nikolay Talanov</h3>
+            <a href="https://codepen.io/suez/" target="_blank" class="demo-cont__click-link">My codepen</a>
+            <a href="https://twitter.com/NikolayTalanov" target="_blank" class="demo-cont__click-link">My twitter</a>
+            <h2 class="demo-cont__click-heading">Based on</h2>
+            <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="_blank"
+              class="demo-cont__click-link">
+              Concept by Kreativa Studio
+            </a>
+            <h4 class="demo-cont__click-blend">Global Blend Mode</h4>
+            <div class="colorful-switch">
+              <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending"
+                id="colorful-switch-cb" />
+              <label class="colorful-switch__label" for="colorful-switch-cb">
+                <span class="colorful-switch__bg"></span>
+                <span class="colorful-switch__dot"></span>
+                <span class="colorful-switch__on">
+                  <span class="colorful-switch__on__inner"></span>
+                </span>
+                <span class="colorful-switch__off"></span>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="news">
-        <!--<h1>News</h1>-->
-        <!--<div><script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="%E3%83%AD%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0" data-fw-param="152676/"></script></div>-->
-        <ul class="card-stacks">
-          <li class="title">
-            <h2>Our News</h2>
-          </li>
-          <li class="stack stack-1">
-            <ul class="cards-down">
-              <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 1 Title</h1>
-                    <p>Stack 1</p>
+        <div class="news">
+          <!--<h1>News</h1>-->
+          <!--<div><script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="%E3%83%AD%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0" data-fw-param="152676/"></script></div>-->
+          <ul class="card-stacks">
+            <li class="title">
+              <h2>Our News</h2>
+            </li>
+            <li class="stack stack-1">
+              <ul class="cards-down">
+                <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 1 Title</h1>
+                      <p>Stack 1</p>
+                      <div>
+                  </a>
+                </li>
+                <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 2 Title</h1>
+                      <p>Stack 1</p>
+                      <div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="stack stack-2">
+              <ul class="cards-down">
+                <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 1 Title</h1>
+                      <p>Stack 2</p>
+                      <div>
+                  </a>
+                </li>
+                <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 2 Title</h1>
+                      <p>Stack 2</p>
+                      <div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="stack stack-3">
+              <ul class="cards-down">
+                <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 1 Title</h1>
+                      <p>Stack 3</p>
+                      <div>
+                  </a>
+                </li>
+                <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 2 Title</h1>
+                      <p>Stack 3</p>
+                      <div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="members">
+          <ul class="card-stacks">
+            <li class="title">
+              <h2>Members</h2>
+            </li>
+            <li class="stack stack-1">
+              <ul class="cards-down">
+                <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 1 Title</h1>
+                      <p>Stack 1</p>
+                      <div>
+                  </a>
+                </li>
+                <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 2 Title</h1>
+                      <p>Stack 1</p>
+                      <div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="stack stack-2">
+              <ul class="cards-down">
+                <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 1 Title</h1>
+                      <p>Stack 2</p>
+                      <div>
+                  </a>
+                </li>
+                <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 2 Title</h1>
+                      <p>Stack 2</p>
+                      <div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="stack stack-3">
+              <ul class="cards-down">
+                <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 1 Title</h1>
+                      <p>Stack 3</p>
+                      <div>
+                  </a>
+                </li>
+                <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
+                    <div class="content">
+                      <h1>Card 2 Title</h1>
+                      <p>Stack 3</p>
                     <div>
-                </a>
-              </li>
-              <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 2 Title</h1>
-                    <p>Stack 1</p>
-                    <div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="stack stack-2">
-            <ul class="cards-down">
-              <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 1 Title</h1>
-                    <p>Stack 2</p>
-                    <div>
-                </a>
-              </li>
-              <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 2 Title</h1>
-                    <p>Stack 2</p>
-                    <div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="stack stack-3">
-            <ul class="cards-down">
-              <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 1 Title</h1>
-                    <p>Stack 3</p>
-                    <div>
-                </a>
-              </li>
-              <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 2 Title</h1>
-                    <p>Stack 3</p>
-                    <div>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="members">
-        <ul class="card-stacks">
-          <li class="title">
-            <h2>Members</h2>
-          </li>
-          <li class="stack stack-1">
-            <ul class="cards-down">
-              <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 1 Title</h1>
-                    <p>Stack 1</p>
-                    <div>
-                </a>
-              </li>
-              <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 2 Title</h1>
-                    <p>Stack 1</p>
-                    <div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="stack stack-2">
-            <ul class="cards-down">
-              <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 1 Title</h1>
-                    <p>Stack 2</p>
-                    <div>
-                </a>
-              </li>
-              <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 2 Title</h1>
-                    <p>Stack 2</p>
-                    <div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="stack stack-3">
-            <ul class="cards-down">
-              <li class="card card-1"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 1 Title</h1>
-                    <p>Stack 3</p>
-                    <div>
-                </a>
-              </li>
-              <li class="card card-2"><a href="pages/comingsoon.html"><img src="resource/images/coming-soon.png">
-                  <div class="content">
-                    <h1>Card 2 Title</h1>
-                    <p>Stack 3</p>
-                  <div>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <p>test</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <p>test</p>
+      </main>
       <!--footer-->
       <footer>
         <div id="footNav">
@@ -474,9 +474,8 @@
           <div class="copyright">&copy;GitManTechnologies 2022</div>
         </div>
       </footer>
-  </div>
-  </main>
-  <script src="scripts/cursor.js"></script>
-  <script src="scripts/slideshow.js"></script>
-</body>
+    </div>
+    <script src="scripts/cursor.js"></script>
+    <script src="scripts/slideshow.js"></script>
+  </body>
 </html>
