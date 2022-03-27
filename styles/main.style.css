@@ -1,19 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
 * {
   cursor: none !important;
 }
 
 html {
   scrollbar-width: 20px;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-.content::-webkit-scrollbar-thumb {
-  background-color: linear-gradient(45deg, #aaf, #448);
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  background-color: #8070d4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: none;
 }
 
 body {
   background-color: #050510;
   text-decoration: none;
   min-height: 100%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 #cursor div {
@@ -29,7 +48,7 @@ body {
 #cursor div#dot1 {
   background: rgba(119, 174, 230, 0.8);
   filter: drop-shadow(0 0 0.4rem rgb(114, 236, 206));
-  mix-blend-mode: exclusion;
+  
   transition: width 0.2s, height 0.2s;
 }
 
@@ -38,19 +57,20 @@ body {
   width: 25px;
   background: rgba(119, 174, 230, 0.3);
   filter: drop-shadow(0 0 0.6rem rgb(114, 236, 206));
-  mix-blend-mode: exclusion;
+  
 }
 
 #cursor div#dot1.pointer {
-  height: 25px;
-  width: 25px;
-  border-top: 5px solid #f0897f;
-  border-right: 5px solid #f6da69;
-  border-bottom: 5px solid #b2ce54;
-  border-left: 5px solid #6aa7cd;
+  height: 15px;
+  width: 15px;
+  transition: border .3s ease-in;
+  border-bottom: 3px solid #f0897f;
+  border-right: 3px solid #6aa7cd;
   background: rgba(119, 174, 230, 0.3);
   filter: drop-shadow(0 0 0.6rem rgb(114, 236, 206));
-  mix-blend-mode: exclusion;
+  background: none;
+  border-radius: 0;
+  transform: rotate(45deg);
 }
 
 #cursor div#dot1.text {
@@ -58,6 +78,7 @@ body {
   height: 1.4em;
   width: 4px;
 }
+
 
 .wapper {
   width: 100vw;
@@ -72,7 +93,7 @@ header {
   background-color: rgb(28, 28, 54);
   margin: 0;
   display: flex;
-  z-index: 10000 !important;
+  
 }
 
 header div {
@@ -87,6 +108,7 @@ header div {
   height: 2rem;
   display: flex;
   margin: auto;
+  z-index: 80000 !important;
 }
 
 #headNav > ul {
@@ -112,6 +134,7 @@ header div {
 #headNav li:hover > ul > li {
   height: 2rem;
   overflow: visible;
+  z-index: 70000 !important;
 }
 
 #headNav li ul li ul {

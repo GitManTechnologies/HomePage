@@ -7,6 +7,8 @@ $(function(){
 
 
 jQuery(document).ready(function($){
+  
+
   $('ul.cards').on('click', function(){
     $(this).toggleClass('transition');
   });

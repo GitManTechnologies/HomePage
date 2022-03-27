@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="auther" content="GItMan">
+    <title>GitManTechnologies</title>
+    <!--icons-->
+    <link rel="icon" href="../resource/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../resource/icon/apple-touch-icon-180x180.png">
+    <!--css-->
+    <link rel="stylesheet" href="https:/unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="../../../styles/loading.style.css">
+    <link rel="stylesheet" href="../../../styles/main.style.css">
+    <link rel="stylesheet" href="../../../styles/blog.style.css">
+    <!--jacascript-->
+    <script src="https:/ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../../scripts/jquery-inertiaScroll.js"></script>
+    <script src="https:/kit.fontawesome.com/85cc705cb7.js" crossorigin="anonymous"></script>
+    <script src="../../../scripts/main.js"></script>
+    <script src="../../../scripts/blog.js"></script>
+  </head>
+
+  <body>
+    <!--cursor-->
+    <div id="cursor">
+      <div id="dot1"></div>
+    </div>
+    <!--loading animation-->
+    <div id="loading" class="wrapper">
+      <div id="loadingShape">
+        <div id="loadingText">
+          <div>L</div>
+          <div>O</div>
+          <div>A</div>
+          <div>D</div>
+          <div>I</div>
+          <div>N</div>
+          <div>G</div>
+        </div>
+        <div id="loading_rocket">
+          <div id="loading_rocket_coord_1"></div>
+          <div id="loading_rocket_coord_2"></div>
+          <div id="loading_rocket_coord_3"></div>
+          <div id="loading_rocket_coord_4"></div>
+          <div id="loading_rocket_coord_5"></div>
+          <div id="loading_rocket_coord_6"></div>
+          <div id="loading_rocket_coord_7"></div>
+          <div id="loading_rocket_coord_8"></div>
+          <div id="loading_rocket_coord_9"></div>
+          <div id="loading_rocket_coord_10"></div>
+        </div>
+      </div>
+      <script>
+        setTimeout(function () {
+          document.getElementById("loading").classList.add("loaded");
+          document.getElementById("contents").classList.add("visible");
+        }, 12000);
+      </script>
+    </div>
+    <div id="contents">
+      <!--header-->
+      <header>
+        <div>
+          <a href="../index.html">
+            <img src="../resource/icon/logo.svg" alt="GitManTechnologies" height="80px">
+          </a>
+        </div>
+        <nav id="headNav">
+          <ul>
+            <li>
+              <a class="btn bganime" href="/"><span>Home</span></a>
+            </li>
+            <li>
+              <a href="../pages/comingsoon.html" class="btn bganime" id="test"><span> Prodacts </span></a>
+              <ul>
+                <li>
+                  <a class="btn bganime" href="../pages/comingsoon.html"><span>Rockets</span></a>
+                  <ul>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Kawaii</span></a></li>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Mottainai</span></a></li>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Sukoshi</span></a></li>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Ninja</span></a></li>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Origami</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="btn bganime" href="../pages/comingsoon.html"><span>Satelites</span></a>
+                  <ul>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Koshihikari</span></a></li>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Akitakomachi</span></a></li>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Hitomebore</span></a></li>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Hinohikari</span></a></li>
+                    <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Masshigura</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="btn bganime" href="../pages/comingsoon.html"><span>Software</span></a>
+                  <ul></ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="btn bganime" href="../blogs/index.html"><span>News</span></a>
+              <ul>
+                <li><a class="btn bganime" href="../blogs/index.html"><span>Our News</span></a></li>
+                <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Launched Satellites</span></a></li>
+                <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Gallary</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="btn bganime" href="../pages/comingsoon.html"><span>About</span></a>
+              <ul>
+                <li><a class="btn bganime" href="../pages/comingsoon.html"><span>What We Are</span></a></li>
+                <li><a class="btn bganime" href="../pages/comingsoon.html"><span>What We Do</span></a></li>
+                <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Recruit</span></a></li>
+                <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Contact</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="btn bganime" href="../pages/comingsoon.html"><span>Shop</span></a>
+              <ul>
+                <li><a class="btn bganime" href="https:/camp-fire.jp/profile/GitManTechnologies/"><span>Donate</span></a></li>
+                <li><a class="btn bganime" href="../pages/comingsoon.html"><span>Official Shop</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--main contents-->
+      <main id="main-content">
+        <div class="blog" data-test="test">
+          <article id="article" data-category-path="../">
+            <div class="article-index">
+              <div class="enrty-cards">
+                <article class="test" style="margin-left: auto; margin-right: auto;">
+                  <a href="category/test/test/index.html" style="display: flex;">
+                    <figure style="max-width: 30%; margin-left: 50px; margin-top: 5px; margin-bottom: 5px; margin-right: 20px;">
+                      <img src="test/img/thumbnail.jpg" width="100%" style="margin-top: auto; margin-bottom: auto;">
+                    </figure>
+                    <div class="introduce" style="width: fit-content;">
+                      <h2>タイトル</h2>
+                      <div>本文の一部を抜粋</div>
+                    </div>
+                  </a>
+                </article>
+                <article class="test" style="margin-left: auto; margin-right: auto;">
+                  <a href="category/test/test/index.html" style="display: flex;">
+                    <figure style="max-width: 30%; margin-left: 50px; margin-top: 5px; margin-bottom: 5px; margin-right: 20px;">
+                      <img src="test/img/thumbnail.jpg" width="100%" style="margin-top: auto; margin-bottom: auto;">
+                    </figure>
+                    <div class="introduce" style="width: fit-content;">
+                      <h2>タイトル</h2>
+                      <div>本文の一部を抜粋</div>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </article>
+          <aside>
+            <div class="search sub-menu">
+              <form id="sform" action="http://gitmantech.rf.gd">
+                <input id="sbox"  id="s" name="s" type="text" placeholder="キーワードを入力" />
+                <input id="sbtn" type="submit" value="検索" />
+              </form>
+            </div>
+            <div class="sub-menu">
+              <h3>カテゴリー</h3>
+              <div class="list">
+                <ul class="category">
+                </ul>
+              </div>
+            </div>
+            <div class="about sub-menu">
+              <h3>私たちについて</h3>
+              <div class="texts">
+                <p>
+                  すべての人に宇宙のすばらしさを届けたい!<br>
+                  という思いがきっかけで始まったGitManTechnologies。<br>
+                  宇宙を、誰にとっても身近なものにしたい。
+                  そのために私たちは宇宙開発にオープンソースを取り入れ、一般の方々も参加できる、宇宙開発をしていきます。
+                </p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+      <!--footer-->
+      <footer>
+        <div id="footNav">
+          <div class="left">
+            <a href="../index.html"><img src="../resource/icon/logo.svg" height="80px"></a>
+            <ul>
+              <li>
+                <a href="https:/www.youtube.com/channel/UC3uNGvURCrOedpiGdTARs5w">
+                  <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https:/twitter.com/GitManTech">
+                  <i class="fa-brands fa-twitter fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https:/discord.gg/tXg76XfV6B">
+                  <i class="fa-brands fa-discord fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https:/github.com/GitManTechnologies">
+                  <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https:/note.com/gitmantech">
+                  <img src="../resource/icon/note-logo.svg" width="30px">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <span>Prodacts</span>
+                <ul>
+                  <li><a href="../pages/comingsoon.html">Rockets</a></li>
+                  <li><a href="../pages/comingsoon.html">Satelites</a></li>
+                  <li><a href="../pages/comingsoon.html">Softwares</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>News</span>
+                <ul>
+                  <li><a href="../blogs/index.html">Our News</a></li>
+                  <li><a href="../pages/comingsoon.html">Launched Satelites</a></li>
+                  <li><a href="../pages/comingsoon.html">Gallary</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>About</span>
+                <ul>
+                  <li><a href="../pages/comingsoon.html">What We Are</a></li>
+                  <li><a href="../pages/comingsoon.html">What We Do</a></li>
+                  <li><a href="../pages/comingsoon.html">Recruit</a></li>
+                  <li><a href="../pages/comingsoon.html">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">&copy;GitManTechnologies 2022</div>
+        </div>
+      </footer>
+    </div>
+    <script src="../scripts/cursor.js"></script>
+  </body>
+</html>
