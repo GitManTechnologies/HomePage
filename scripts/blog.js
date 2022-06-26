@@ -19,10 +19,10 @@ window.addEventListener('DOMContentLoaded', function() {
   ];
   var auther_index = $.inArray(auther_data, auther);
   console.log(auther_index);
-  var auther_html = '<img src="../resource/icon/astronaut.svg">'+ 
+  var auther_html = '<img src="../../../../resource/icon/astronaut.svg">'+ 
                     '<div class="auther">' +
                     '<h3>この記事を書いた人</h3>' +
-                    '<a href="../pages/comingsoon.html"><p>' + auther[auther_index + 1] +
+                    '<a href="../../../../pages/comingsoon.html"><p>' + auther[auther_index + 1] +
                     '</p></a>' +
                     '</div>' +
                     '<div class="auther-info">' +
@@ -30,8 +30,9 @@ window.addEventListener('DOMContentLoaded', function() {
                     '</p><a href="' + auther_info[0][1] + '"><i class="fa-brands fa-youtube fa-2x"></i></a>' +
                     '<a href="' + auther_info[0][2] + '"><i class="fa-brands fa-twitter fa-2x"></i></a>' +
                     '<a href="' + auther_info[0][3] + '"><i class="fa-brands fa-github fa-2x"></i></a>' +
-                    '<a href="' + auther_info[0][4] + '"><img src="../resource/icon/note-logo.svg" width="40px"></a>' +
+                    '<a href="' + auther_info[0][4] + '"><img src="../../../../resource/icon/note-logo.svg" width="40px"></a>' +
                     '</div>';
   $(".info .writer").append(auther_html);
+
 });
 
